@@ -1,5 +1,7 @@
 import Banner from "./components/Banner"
 import Navbar from "./components/Navbar"
+import Categories from "./components/Categories"
+import NewArrival from "./components/NewArrival"
 
 function App() {
 
@@ -7,6 +9,8 @@ function App() {
     <>
       <Navbar />
       <Banner />
+      <Categories />
+      <NewArrival/>
     </>
   )
 }
