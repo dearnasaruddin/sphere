@@ -11,7 +11,7 @@ const FooterTop = () => {
             </div>
             <div className='font-montserrat px-6 pt-8 pb-3 rounded-[20px] bg-[#EFF0F1]'>
                 <div className='relative'>
-                    <CiSearch className='absolute top-1/2 -translate-y-1/2 left-0 text-3xl' />
+                    <CiSearch className='absolute top-1/2 -translate-y-1/2 left-0 text-3xl text-[#01081A]' />
                     <input className='w-full font-light text-xl pl-15.5 text-[#01081A] focus:outline-none' type="text" placeholder='Search for electronic' /> <br />
                 </div>
                 <button className='font-medium text-lg text-center py-3 px-61 mt-6 rounded-[14px] text-black bg-[#ACE238]' type="button">Search</button>

@@ -15,7 +15,7 @@ function App() {
       <Categories />
       <NewArrival />
       <OfferSection />
-      {/* <FlashSale /> */}
+      <FlashSale />
       <Footer />
     </>
   )
