@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Categories from "./components/Categories"
 import NewArrival from "./components/NewArrival"
 import OfferSection from "./components/OfferSection"
+import FlashSale from "./components/FlashSale"
 
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
       <Navbar />
       <Banner />
       <Categories />
-      <NewArrival/>
-      <OfferSection/>
+      <NewArrival />
+      <OfferSection />
+      <FlashSale />
     </>
   )
 }
