@@ -4,6 +4,7 @@ import Categories from "./components/Categories"
 import NewArrival from "./components/NewArrival"
 import OfferSection from "./components/OfferSection"
 import FlashSale from "./components/FlashSale"
+import Footer from "./components/footer/Footer"
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
       <Categories />
       <NewArrival />
       <OfferSection />
-      <FlashSale />
+      {/* <FlashSale /> */}
+      <Footer />
     </>
   )
 }

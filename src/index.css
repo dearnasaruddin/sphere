@@ -5,3 +5,12 @@
   --font-prompt: "Prompt", "sans-serif";
   --color-primary: #5E1EE5;
 }
+
+.iconParent:hover .icon path {
+  fill: #5E1EE5;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
