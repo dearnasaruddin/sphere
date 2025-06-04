@@ -35,7 +35,7 @@ const FlashSale = () => {
         <div className='mt-24'>
             <Container>
                 <div className='relative'>
-                    <h3 className='font-prompt font-bold text-5xl leading-[125%] -tracking-[20%] text-black mb-16'>Flash sale for <span className='text-primary'>best</span> sellers</h3>
+                    <h3 className='font-prompt font-bold text-5xl leading-[125%] -tracking-[0.94px] text-black mb-16'>Flash sale for <span className='text-primary'>best</span> sellers</h3>
                     <img className='absolute -top-2 right-22 z-10' src="images/flashSaleShape.svg" alt="flashSaleShape.svg" />
                     <div className='flex items-center justify-between'>
                         {

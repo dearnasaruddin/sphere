@@ -45,7 +45,7 @@ const Categories = () => {
 
         <Container>
             <div className='pt-26 relative'>
-                <h2 className='font-prompt font-extrabold text-[74px] leading-[125%] -tracking-[2%] text-center text-black mb-13'>What <span className='text-primary'>we</span> provide?</h2>
+                <h2 className='font-prompt font-extrabold text-[74px] leading-[125%] -tracking-[1.48px] text-center text-black mb-13'>What <span className='text-primary'>we</span> provide?</h2>
                 <img className='absolute z-10 right-8.5 top-21' src="images/shapeRight.svg" alt="shapeRight.svg" />
                 <img className='absolute z-10 -left-25 top-17.5' src="images/shapeLeft.svg" alt="shapeLeft.svg" />
                 <div className='flex justify-between'>

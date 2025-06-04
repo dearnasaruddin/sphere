@@ -27,7 +27,7 @@ const ProductCard = ({ title = "Title", price = "000.00", quantity = "00", flash
       <h3 className={`${!flashSale && "flex justify-between items-center"} font-montserrat font-extrabold text-2xl leading-[130%] text-[#2C2C2C] mt-9.5`}>{title} {!flashSale && <span>${price}</span>}</h3>
       <p className='max-w-95 mt-5 mb-4 font-montserrat font-normal leading-[155%] text-lg text-black'>Lorem ipsum dolor sit amet consectetur. Eleifend nec morbi tellus vitae leo nunc.</p>
       <div className='flex gap-x-2.5 items-center'>
-        <div className="flex items-center gap-x-0.5 text-[#04A904]">
+        <div className="flex items-center gap-x-0.5 text-[#04A904] text-xl">
           <ImStarFull />
           <ImStarFull />
           <ImStarFull />
@@ -37,7 +37,7 @@ const ProductCard = ({ title = "Title", price = "000.00", quantity = "00", flash
         <span className='font-montserrat font-normal leading-[155%] text-lg text-black'>({quantity})</span>
       </div>
 
-      <button className='flex items-center gap-x-2.5 py-4 px-9 rounded-[52px] border mt-5 font-montserrat font-medium text-base leading-[130%] text-black'><MdShoppingCart /><span>Add to Cart</span></button>
+      <button className='flex items-center gap-x-2.5 py-4 px-9 rounded-[52px] border mt-5 font-montserrat font-medium text-base leading-[130%] text-black'><MdShoppingCart className='text-lg'/><span>Add to Cart</span></button>
     </div>
   )
 }

@@ -28,7 +28,7 @@ const NewArrival = () => {
         <div className='pt-26.5'>
             <Container>
                 <div className="flex justify-between items-center">
-                    <h2 className='font-prompt font-bold text-5xl leading-[125%] -tracking-[2%] text-center text-black'>New <span className='text-primary'>arrival</span> for you</h2>
+                    <h2 className='font-prompt font-bold text-5xl leading-[125%] -tracking-[0.94px] text-center text-black'>New <span className='text-primary'>arrival</span> for you</h2>
                     <ul className='flex gap-x-6'>
                         <li><Link className='size-14 flex justify-center items-center rounded-full border hover:border-none hover:bg-[#AFE638] duration-300'><LuArrowLeft className='text-2xl' /></Link></li>
                         <li><Link className='size-14 flex justify-center items-center rounded-full border hover:border-none hover:bg-[#AFE638] duration-300'> <LuArrowRight className='text-2xl' /> </Link></li>
