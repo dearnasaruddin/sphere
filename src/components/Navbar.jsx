@@ -8,7 +8,7 @@ const Navbar = () => {
         <div>
             <Container>
                 <div className="flex items-center justify-between py-12.5 font-montserrat font-semibold text-sm text-[#8E8E8E] uppercase">
-                    <div>
+                    <div className='mb-3.5'>
                         <Link to={'#'}>
                             <img src="images/logo.png" alt="logo.png" />
                         </Link>

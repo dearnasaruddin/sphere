@@ -1,6 +1,8 @@
 import React from 'react'
 import Container from './Container'
 import ProductCard from './ProductCard'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 
 const FlashSale = () => {
 
@@ -11,7 +13,7 @@ const FlashSale = () => {
             price: "89.000",
             originalPrice: "IDR 150.00",
             discount: "8",
-            quantity: "125"
+            totalRating: "125"
         },
         {
             id: 2,
@@ -19,7 +21,7 @@ const FlashSale = () => {
             price: "89.000",
             originalPrice: "IDR 150.00",
             discount: "8",
-            quantity: "125"
+            totalRating: "125"
         },
         {
             id: 3,
@@ -27,9 +29,20 @@ const FlashSale = () => {
             price: "90.000",
             originalPrice: "IDR 250.00",
             discount: "13",
-            quantity: "125"
+            totalRating: "125"
         },
     ]
+
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false
+    };
 
     return (
         <div className='mt-24'>
@@ -37,12 +50,14 @@ const FlashSale = () => {
                 <div className='relative'>
                     <h3 className='font-prompt font-bold text-5xl leading-[125%] -tracking-[0.94px] text-black mb-16'>Flash sale for <span className='text-primary'>best</span> sellers</h3>
                     <img className='absolute -top-2 right-22 z-10' src="images/flashSaleShape.svg" alt="flashSaleShape.svg" />
-                    <div className='flex items-center justify-between'>
-                        {
-                            flashSaleData.map((item) => (
-                                <ProductCard key={item.id} flashSale={true} title={item.title} quantity={item.quantity} price={item.price} originalPrice={item.originalPrice} discount={item.discount} />
-                            ))
-                        }
+                    <div className='w-full h-167'>
+                        <Slider className='flashSaleSlider' {...settings}>
+                            {
+                                flashSaleData.map((item) => (
+                                    <ProductCard key={item.id} flashSale={true} title={item.title} totalRating={item.totalRating} price={item.price} originalPrice={item.originalPrice} discount={item.discount} width='400px' />
+                                ))
+                            }
+                        </Slider>
                     </div>
                 </div>
             </Container>

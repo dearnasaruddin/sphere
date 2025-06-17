@@ -3,10 +3,9 @@ import { ImStarFull } from "react-icons/im";
 import { MdShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 
-const ProductCard = ({ title = "Title", price = "000.00", quantity = "00", flashSale = false, originalPrice = "IDR 000.00", discount = "00" }) => {
+const ProductCard = ({ width='auto', title = "Title", price = "000.00", totalRating = "00", flashSale = false, originalPrice = "IDR 000.00", discount = "00" }) => {
   return (
-    <div>
-
+    <div style={{width: width}}>
       <div className={`${flashSale ? "pt-23.5 pb-8" : "pt-24.5 pb-9.5"} px-13 bg-white shadow-[0px_4px_24px_-1px_#00000014] rounded-2xl relative`}>
         {flashSale ?
           <div className='flex justify-center items-center absolute top-14 right-7.5'>
@@ -34,7 +33,7 @@ const ProductCard = ({ title = "Title", price = "000.00", quantity = "00", flash
           <ImStarFull />
           <ImStarFull />
         </div>
-        <span className='font-montserrat font-normal leading-[155%] text-lg text-black'>({quantity})</span>
+        <span className='font-montserrat font-normal leading-[155%] text-lg text-black'>({totalRating})</span>
       </div>
 
       <button className='flex items-center gap-x-2.5 py-4 px-9 rounded-[52px] border mt-5 font-montserrat font-medium text-base leading-[130%] text-black'><MdShoppingCart className='text-lg'/><span>Add to Cart</span></button>
