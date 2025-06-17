@@ -12,7 +12,7 @@ function SampleNextArrow(props) {
     return (
         <div
             className={`custom-arrow ${className}`}
-            style={{ ...style, display: "flex", justifyContent: 'center', alignItems: 'center', background: "transparent", borderRadius: '50%', border:'1px solid black', width: '56px', height: '56px', zIndex:'10', position:'absolute', top: '-104px' , right: '13px' }}
+            style={{ ...style, display: "flex", justifyContent: 'center', alignItems: 'center', background: "transparent", borderRadius: '50%', border:'1px solid black', width: '56px', height: '56px', zIndex:'10', position:'absolute', top: '-104px' , right: '25px', cursor: "pointer" }}
             onClick={onClick}
         ><LuArrowRight className='text-2xl' /></div>
     );
@@ -23,7 +23,7 @@ function SamplePrevArrow(props) {
     return (
         <div
             className={`custom-arrow ${className}`}
-            style={{ ...style, display: "flex", justifyContent: 'center', alignItems: 'center', background: "transparent", borderRadius: '50%', border:'1px solid black', width: '56px', height: '56px', zIndex:'10', position:'absolute', top: '-104px', right: '93px' }}
+            style={{ ...style, display: "flex", justifyContent: 'center', alignItems: 'center', background: "transparent", borderRadius: '50%', border:'1px solid black', width: '56px', height: '56px', zIndex:'10', position:'absolute', top: '-104px', right: '105px', cursor: "pointer" }}
             onClick={onClick}
         ><LuArrowLeft className='text-2xl' /></div>
     );
@@ -46,12 +46,6 @@ const NewArrival = () => {
             title: "Xiphone 13",
             price: "100.00",
             totalRating: "89",
-        },
-        {
-            id: 3,
-            title: "Xiphone 15 Pro",
-            price: "190.00",
-            totalRating: "76",
         }
 
     ]
